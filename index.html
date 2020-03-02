@@ -3,4 +3,8 @@
 <script>
     const _testEle = document.getElementById('test')
     _testEle.innerHTML = ('js works')
+
+    const params = new URLSearchParams(window.location.search)
+    const _redir = params.get('redir')
+    window.location.replace(_redir)
 </script>
